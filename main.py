@@ -7,7 +7,6 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()  
 
 try:
-    # 2. Otwarcie strony docelowej
     driver.get("http://books.toscrape.com/")
     
     
