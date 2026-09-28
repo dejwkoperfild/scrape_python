@@ -29,9 +29,7 @@ try:
         title = book.find_element(By.CSS_SELECTOR, "h3 a").get_attribute("title")
         price = book.find_element(By.CSS_SELECTOR, "p.price_color").text
         availability = book.find_element(By.CSS_SELECTOR, "p.availability").text.strip()
-        
         books_data.append([title, price, availability])
-        print(f"Pobrano: {title} | {price}")
 
 
     output_dir = Path("output_files")
